@@ -1,0 +1,5 @@
+Statistics:
+===========
+Trinity Version:      Trinity-v2.11.0
+Compiler:             GCC
+Trinity Parameters:   --seqType fq --max_memory 50G --left /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_data/sel4_SRR1719266_1P.fq.gz,/home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_data/sel4_SRR1719266_1U.fq.gz --right /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_data/sel4_SRR1719266_2P.fq.gz,/home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_data/sel4_SRR1719266_2U.fq.gz --CPU 6 --output /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/analyses/2_Assemblies/trinity_transcriptome_assembly/
