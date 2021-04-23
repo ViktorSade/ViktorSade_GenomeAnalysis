@@ -1,0 +1,22 @@
+Assembly	graph_prefix.scafSeq	graph_prefix.scafSeq_broken
+# contigs (>= 0 bp)	196537	-
+# contigs (>= 1000 bp)	5826	1408
+# contigs (>= 5000 bp)	567	118
+# contigs (>= 10000 bp)	134	9
+# contigs (>= 25000 bp)	0	0
+# contigs (>= 50000 bp)	0	0
+Total length (>= 0 bp)	56971217	-
+Total length (>= 1000 bp)	12494970	3653387
+Total length (>= 5000 bp)	4258104	827213
+Total length (>= 10000 bp)	1428621	106581
+Total length (>= 25000 bp)	0	0
+Total length (>= 50000 bp)	0	0
+# contigs	18540	30237
+Largest contig	18003	14653
+Total length	21878692	8608431
+GC (%)	42.35	42.94
+N50	1119	506
+N75	829	173
+L50	4351	2371
+L75	10176	11593
+# N's per 100 kbp	46022.23	7.34

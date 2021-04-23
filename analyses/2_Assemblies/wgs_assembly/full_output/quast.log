@@ -1,0 +1,57 @@
+/var/www/quast/source/quast/quast.py /var/www/quast/source/../data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/contigs/graph_prefix.scafSeq --min-contig 500 --eukaryote --split-scaffolds -J /var/www/quast/source/../data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766 -o /var/www/quast/source/../data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/full_output --err-fpath /var/www/quast/source/../data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/error.log -t 2
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1062.18.1.el7.x86_64-x86_64-with-centos-7.7.1908-Core (linux_64)
+  Python version: 2.7.5
+  CPUs number: 6
+
+Started: 2021-04-23 10:40:52
+
+Logging to /var/www/quast/data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/full_output/quast.log
+
+CWD: /var/www/quast/source
+Main parameters: 
+  MODE: default, threads: 2, eukaryotic: true, split scaffolds: true, minimum contig length: 500, \
+  minimum alignment length: 65, ambiguity: one, threshold for extensive misassembly size: 1000
+
+WARNING: Can't draw plots: python-matplotlib is missing or corrupted.
+
+Contigs:
+  Pre-processing...
+  /var/www/quast/source/../data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/contigs/graph_prefix.scafSeq ==> graph_prefix.scafSeq
+    breaking scaffolds into contigs:
+      18540 scaffolds (graph_prefix.scafSeq) were broken into 30237 contigs (graph_prefix.scafSeq_broken)
+
+2021-04-23 10:41:03
+Running Basic statistics processor...
+  Contig files: 
+    1  graph_prefix.scafSeq
+    2  graph_prefix.scafSeq_broken
+  Calculating N50 and L50...
+    1  graph_prefix.scafSeq, N50 = 1119, L50 = 4351, Total length = 21878692, GC % = 42.35, # N's per 100 kbp =  46022.23
+    2  graph_prefix.scafSeq_broken, N50 = 506, L50 = 2371, Total length = 8608431, GC % = 42.94, # N's per 100 kbp =  7.34
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2021-04-23 10:41:06
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 1: Creating Icarus viewers...
+Done
+
+2021-04-23 10:41:07
+RESULTS:
+  Text versions of total report are saved to /var/www/quast/data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/full_output/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /var/www/quast/data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/full_output/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /var/www/quast/data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/full_output/report.html
+  Icarus (contig browser) is saved to /var/www/quast/data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/full_output/icarus.html
+  Log is saved to /var/www/quast/data/results/5ztvew3m2wjqc7g21bd9immyktescqte/23_Apr_2021_07_32_51_027766/full_output/quast.log
+
+Finished: 2021-04-23 10:41:07
+Elapsed time: 0:00:15.460258
+NOTICEs: 1; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
