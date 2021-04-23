@@ -10,4 +10,12 @@
 #SBATCH --mail-user Viktor.Sade.7837@student.uu.se
 
 #Modules
-module load gcc/6.2.0 star/2.5.2b
+module load bioinfo-tools gcc star
+
+#Create Genome index
+cd /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_data/
+#STAR -- runThreadN 2 --runMode genomeGenerate --genomeChrBinNbits 11 -- genomeSAindexNbases 13 --genomeDir /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/genome_index --genomeFastaFiles /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/wgs_assembly/graph_prefix.scafSeq
+
+#Align reads
+STAR -- runThreadN 2 --genomeDir /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/genome_index --readFilesCommand gunzip -c --readFilesIn sel4_SRR1719266_1P.fq.gz,sel4_SRR1719266_2P.fq.gz,sel4_SRR1719266_1U.fq.gz,sel4_SRR1719266_2U.fq.gz --outFileNamePrefix /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/aligned_rna/ --outSAMtype BAM Unsorted
+
