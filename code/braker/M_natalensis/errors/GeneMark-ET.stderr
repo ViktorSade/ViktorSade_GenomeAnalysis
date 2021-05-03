@@ -1,0 +1,3 @@
+Must input more than one data point! at /sw/bioinfo/GeneMark/4.33-es/rackham/parse_ET.pl line 213.
+Invalid regression data
+	(in cleanup) 	(in cleanup)  at /sw/comp/perl_modules/5.26.2/snowy/lib/perl5/Object/InsideOut.pm line 1953 during global destruction.
