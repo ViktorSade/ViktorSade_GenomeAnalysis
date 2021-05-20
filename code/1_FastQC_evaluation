@@ -14,6 +14,6 @@ module load bioinfo-tools
 module load FastQC
 
 # Commands
-#fastqc -o /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/analyses/1_preprocessing/fastqc_rna_raw/ /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/raw_data/rna_data/*
-#fastqc -o /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/analyses/1_preprocessing/fastqc_wgs/ /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/raw_data/wgs_data/*
+fastqc -o /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/analyses/1_preprocessing/fastqc_rna_raw/ /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/raw_data/rna_data/*
+fastqc -o /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/analyses/1_preprocessing/fastqc_wgs/ /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/raw_data/wgs_data/*
 fastqc -o /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/analyses/1_preprocessing/fastqc_rna_trimmed/ /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_data/*
