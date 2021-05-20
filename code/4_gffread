@@ -1,0 +1,15 @@
+#!/bin/bash -l
+
+#SBATCH -A g2021012
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 2:00:00
+#SBATCH -J gff
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user Viktor.Sade.7837@student.uu.se
+
+Module load bioinfo-tools, bowtie, cufflinks
+
+gffread -w transcripts.fa -g /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/ref_assembly/sel4_NW_015503979.fna extracted.gff
+#perl gff2fasta.pl transcripts.fa extracted.gff protein.fa

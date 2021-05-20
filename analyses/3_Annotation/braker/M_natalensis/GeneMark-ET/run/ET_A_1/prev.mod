@@ -1,0 +1,1 @@
+/domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_ini/et_ini.mod

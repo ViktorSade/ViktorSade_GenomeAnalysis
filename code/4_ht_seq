@@ -1,0 +1,25 @@
+#!/bin/bash -l
+
+#SBATCH -A g2021012
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 00:30:00
+#SBATCH -J htseq
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user Viktor.Sade.7837@student.uu.se
+
+
+# Modules
+module load bioinfo-tools, htseq
+
+# Scripts
+#/sw/bioinfo/htseq/0.12.4/rackham/bin/htseq-count -r pos --idattr=gene -f bam /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/bamfiles/sel4_SRR1719013Aligned.sortedByCoord.out.bam \
+# /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/extracted.gff 
+
+#/sw/bioinfo/htseq/0.12.4/rackham/bin/htseq-count --idattr=gene /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/samfiles/*sam /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/extracted.gff
+
+/sw/bioinfo/htseq/0.12.4/snowy/bin/htseq-count --idattr=gene /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/samfiles/sel4_SRR1719208Aligned.out.sam /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/extracted.gff > /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/expression_data/sel4_SRR1719208_CS17_Forelimb
+/sw/bioinfo/htseq/0.12.4/snowy/bin/htseq-count --idattr=gene /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/samfiles/sel4_SRR1719209Aligned.out.sam /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/extracted.gff > /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/expression_data/sel4_SRR1719209_CS17_Forelimb
+/sw/bioinfo/htseq/0.12.4/snowy/bin/htseq-count --idattr=gene /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/samfiles/sel4_SRR1719213Aligned.out.sam /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/extracted.gff > /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/expression_data/sel4_SRR1719213_CS17_Hindlimb
+/sw/bioinfo/htseq/0.12.4/snowy/bin/htseq-count --idattr=gene /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/samfiles/sel4_SRR1719241Aligned.out.sam /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/extracted.gff > /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/expression_data/sel4_SRR1719241_CS17_Hindlimb

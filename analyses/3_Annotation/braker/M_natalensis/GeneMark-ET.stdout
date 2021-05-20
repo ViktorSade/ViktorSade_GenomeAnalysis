@@ -1,0 +1,98 @@
+check before run
+create directories
+commit input data
+data report
+commit training data
+training data report
+prepare initial model
+get GC of sequence
+GC 43
+build initial ET model
+running step ET_A
+running gm.hmm on local system
+2 contigs in training
+concatenate predictions: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_A_1
+training level ET_A: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_A_1
+From 3917 loaded 3917 and ignored dublications 0
+exon	no_match	match_one	match_two
+Initial	121	12	0
+Internal	210	53	61
+Terminal	123	11	0
+Single	39	0	0
+CDS_no_match	all	short	long	seq_short	seq_long
+CDS_no_match	493	484	9	128431	10858
+Intergenic	all	between_match	seq_match
+Intergenic:	173	1	21597
+running step ET_B
+running gm.hmm on local system
+2 contigs in training
+concatenate predictions: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_B_1
+training level ET_B: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_B_1
+From 3917 loaded 3917 and ignored dublications 0
+exon	no_match	match_one	match_two
+Initial	159	26	0
+Internal	275	81	86
+Terminal	160	25	0
+Single	6	0	0
+CDS_no_match	all	short	long	seq_short	seq_long
+CDS_no_match	600	591	9	107530	11735
+Intergenic	all	between_match	seq_match
+Intergenic:	192	3	44353
+running step ET_C
+running gm.hmm on local system
+2 contigs in training
+concatenate predictions: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_C_1
+training level ET_C: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_C_1
+From 3917 loaded 3917 and ignored dublications 0
+exon	no_match	match_one	match_two
+Initial	194	26	0
+Internal	394	134	145
+Terminal	193	28	0
+Single	9	0	0
+CDS_no_match	all	short	long	seq_short	seq_long
+CDS_no_match	790	782	8	116035	10171
+Intergenic	all	between_match	seq_match
+Intergenic:	230	6	143954
+SvsM  0.0422535211267606 vs 0.957746478873239
+genes in IvsT: 91
+3, -2.11296423371848
+5, -1.94591014905531
+6, -1.87180217690159
+9, -2.2082744135228
+IvsT  0.980211317498618 vs 0.0197886825013823
+running gm.hmm on local system
+2 contigs in training
+concatenate predictions: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_C_2
+training level ET_C: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_C_2
+From 3917 loaded 3917 and ignored dublications 0
+exon	no_match	match_one	match_two
+Initial	123	19	0
+Internal	996	175	170
+Terminal	124	20	0
+Single	2	0	0
+CDS_no_match	all	short	long	seq_short	seq_long
+CDS_no_match	1245	1238	7	153355	9206
+Intergenic	all	between_match	seq_match
+Intergenic:	145	6	144047
+SvsM  0.0129032258064516 vs 0.987096774193548
+genes in IvsT: 99
+4, -2.29253475714054
+7, -2.29253475714054
+IvsT  0.999999999999999 vs 7.7715611723761e-16
+running gm.hmm on local system
+2 contigs in training
+concatenate predictions: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_C_3
+training level ET_C: /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run/ET_C_3
+From 3917 loaded 3917 and ignored dublications 0
+exon	no_match	match_one	match_two
+Initial	0	0	0
+Internal	1288	130	102
+Terminal	2	0	0
+Single	5	0	0
+CDS_no_match	all	short	long	seq_short	seq_long
+CDS_no_match	1295	1290	5	138572	7429
+Intergenic	all	between_match	seq_match
+Intergenic:	7	0	0
+SvsM  0.666666666666667 vs 0.333333333333333
+genes in IvsT: 4
+error on call: /sw/bioinfo/GeneMark/4.33-es/rackham/parse_ET.pl --section ET_C --cfg  /domus/h1/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/code/braker/M_natalensis/GeneMark-ET/run.cfg  --v

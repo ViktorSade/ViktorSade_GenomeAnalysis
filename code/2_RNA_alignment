@@ -4,7 +4,7 @@
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 00:30:00
+#SBATCH -t 01:00:00
 #SBATCH -J RNA_alignment
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user Viktor.Sade.7837@student.uu.se
@@ -13,12 +13,17 @@
 module load bioinfo-tools gcc star
 
 #Create Genome index
-cd /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_data/
-STAR -- runThreadN 2 --runMode genomeGenerate --genomeChrBinNbits 11 -- genomeSAindexNbases 13 --genomeDir /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/genome_index_reference --genomeFastaFiles \
-/home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/ref_assembly/sel4_NW_015503979.fna
+cd /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_rna
+#STAR -- runThreadN 2 --runMode genomeGenerate --genomeChrBinNbits 11 -- genomeSAindexNbases 13 --genomeDir /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/genome_index --genomeFastaFiles \
+#/home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/ref_assembly/sel4_NW_015503979.fna
 
 #Align reads
+for file in /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/trimmed_rna/*
+do
+file_prefix=${file%%.trim*}
+file_prefix_2=${file_prefix#*trimmed_rna/}
 STAR -- runThreadN 2 --genomeDir /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/genome_index_reference --readFilesCommand gunzip -c \
- --readFilesIn sel4_SRR1719266_1P.fq.gz,sel4_SRR1719266_2P.fq.gz,sel4_SRR1719266_1U.fq.gz,sel4_SRR1719266_2U.fq.gz --outFileNamePrefix /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/aligned_rna/ \
- --outSAMtype BAM SortedByCoordinate
+ --readFilesIn $file /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/2_P/$file_prefix_2.trim_2P.fastq.gz \
+ --outSAMtype SAM --outFileNamePrefix /home/viktosd/Genome_Analysis/ViktorSade_GenomeAnalysis/data/samfiles/$file_prefix_2
 
+done
