@@ -1,6 +1,6 @@
 
 # Load directory containing the htseq-count files
-directory <- "C:/Users/vikto/Documents/GenomeAnalysis/expression_analysis/HtSeq/"
+directory <- "C:/Users/vikto/Documents/GenomeAnalysis/expression_analysis/HtSeq/" # Needs to be changed to the correct HtSeq location depending on location of the directory
 
 # Create a list of the file names from the directory
 sampleFiles <- list.files(directory)
