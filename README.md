@@ -23,6 +23,6 @@ The scripts can be run in the following order:
 
 4_ht_seq
 
-4_Deseq_analysis - Note that this script is run in Rstudio.
+5_Deseq_analysis - Note that this script is run in Rstudio.
 
 Producing the last results can be done by following the method described in the wiki.
